@@ -17,7 +17,8 @@ public class TopM {
 
         while (StdIn.hasNextLine()) {
             // 为下一行输入创建一个元素并放入优先队列中
-            pq.insert(new Transaction(StdIn.readLine()));
+            // TODO: 2019/5/15 pq.insert方法报错
+            //pq.insert(new Transaction(StdIn.readLine()));
             if (pq.size() > M)
                 // 如果优先队列中存在M + 1个元素则删除其中最小的元素
                 pq.delMin();
